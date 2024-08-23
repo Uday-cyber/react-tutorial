@@ -6,12 +6,19 @@ import './App.css'
 function App() {
   // let counter = 15
 
-  var [counter, setCounter] = useState(15);
+  const [counter, setCounter] = useState(15);
 
   const addValue = () => {
     // console.log("Value updated", counter);
     // counter += 1;
     setCounter(counter+1);
+
+    // setCounter(prevCounter => prevCounter+1)
+    // setCounter(prevCounter => prevCounter+1)
+    // setCounter(prevCounter => prevCounter+1)
+    // setCounter(prevCounter => prevCounter+1)
+    // setCounter(prevCounter => prevCounter+1)
+
   }
 
   const subValue = () => {
@@ -26,8 +33,8 @@ function App() {
       <h1>Learning ReactJS</h1>
       <h2>Counter Value: {counter}</h2>
 
-      <button onClick={subValue}>decrease Value</button>
-      <button onClick={addValue}>Increase Value</button>
+      <button onClick={subValue}>&darr;</button>
+      <button onClick={addValue}>&uarr;</button>
     </>
   )
 }
